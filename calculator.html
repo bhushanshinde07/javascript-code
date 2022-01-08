@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    
+    <div id="calculator">
+         <input type="text" id="myinput" placeholder="enter number"><br><br>
+        <button type="text" id="one" class="first" onclick="collect('1')">1</button>
+        <button type="text" id="two" class="first" onclick="collect('2')">2</button>
+        <button  type="text" id="three" class="first" onclick="collect('3')">3</button>
+        <button  type="text" id="four" class="first" onclick="collect('4')">4</button> <br><br> 
+
+        <button  type="text" id="five" class="second" onclick="collect('5')">5</button>
+        <button  type="text" id="six"  class="second"  onclick="collect('6')" >6</button>
+        <button  type="text" id="seven" class="second"  onclick="collect('7')">7</button>
+        <button  type="text"id="eight"  class="second"  onclick="collect('8')">8</button><br><br>
+
+        <button  type="text" id="nine"  class="thrid"   onclick="collect('9')">9</button>
+        <button  type="text" id="zero"  class="thrid"  onclick="collect('0')">0</button>
+        <button  type="text" id="clear" class="thrid"  onclick="myclear()">AC</button>
+        <button  type="text" id="add"  class="thrid"   onclick="collect('+')">+</button><br><br>
+
+        <button  type="text" id="substraction" class="fourth"  onclick="collect('-')">-</button>
+        <button  type="text" id="division"     class="fourth"  onclick="collect('/')">/</button>
+        <button  type="text" id="multiplication" class="fourth"  onclick="collect('*')">*</button>
+        <button   type="text"id="equal"          class="fourth"  onclick="myresult()">=</button>
+        <button   type="text"  onclick="removedata()">C</button>
+        
+       
+    </div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
